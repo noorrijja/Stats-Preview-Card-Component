@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  margin-inline: 6%;
+  margin-block: 15%;
+  background-color: hsl(233, 47%, 7%);
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 12px;
+  background-color: hsl(244, 38%, 16%);
+  padding-block-end: 6%;
+}
+.image {
+  width: 100%;
+  height: 230px;
+  background-image: url("./images/image-header-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  opacity: 100%;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 50%;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 12%;
+}
+.heading,
+.desc {
+  text-align: center;
+}
+.heading {
+  margin-block-end: 0;
+  color: hsl(0, 0%, 100%);
+}
+.purple {
+  color: hsl(277, 64%, 61%);
+}
+.desc {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 16px;
+  font-weight: 400;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.one,
+.two,
+.three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.number {
+  color: hsl(0, 0%, 100%);
+  margin-block-end: 0;
+}
+.item {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  margin-block-start: 0;
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 50%;
+}
+.heading,
+.number {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+.desc,
+.item {
+  font-family: "Lexend Deca", sans-serif;
+}
+@media only screen and (min-width: 1240px) {
+  body {
+    display: flex;
+  }
+  .flex-container {
+    margin: auto;
+    vertical-align: middle;
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 360px;
+    padding-block-end: 0;
+  }
+  .image {
+    height: 100%;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 0;
+  }
+  .overlay {
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 0;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-block: 30px;
+  }
+  .heading,
+  .desc {
+    text-align: left;
+  }
+  .column {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+  }
+}
